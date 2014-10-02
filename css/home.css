@@ -1,0 +1,24 @@
+H1 {
+	text-align:left; 
+	color:gray; 
+	font: lighter 40pt "Avenir Next";
+	margin-left: 5;margin-top: 12;
+	margin-bottom: 0
+}
+H2 {
+	text-align:left; 
+	color:black; 
+	font: normal 14pt "Avenir";
+	margin-left: 5;
+	margin-top: 0;
+}
+
+UL {
+
+	color:Black; 
+	font: normal 12pt "Avenir";
+}
+
+Header {
+	background-color:red
+}
