@@ -1,4 +1,4 @@
 js
 ==
 
-js labs
+js labs repo
