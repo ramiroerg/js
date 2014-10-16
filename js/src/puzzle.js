@@ -142,7 +142,7 @@ var myPuzzle = function(){
 	var pares = 0;
 	do {
 		//Get the first index
-		var firstIndex = getIndex('PRIMER', size);
+		var firstIndex = getIndex('PRIMER', size-1);
 		if (firstIndex != 0) {
 			tempMatrix[firstIndex.row][firstIndex.col] = matrix[firstIndex.row][firstIndex.col];
 			console.clear();
@@ -150,7 +150,7 @@ var myPuzzle = function(){
 		}
 
 		//Get the second index
-		var secondIndex = getIndex('SEGUNDO', size);
+		var secondIndex = getIndex('SEGUNDO', size-1);
 		if (secondIndex != 0) {
 			tempMatrix[secondIndex.row][secondIndex.col] = matrix[secondIndex.row][secondIndex.col];
 			console.clear();
