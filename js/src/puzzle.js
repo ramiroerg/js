@@ -7,14 +7,8 @@ var myPuzzle = function(){
 			if(n == null){
 				n= 4;
 			}
-
 			n = parseInt(n);
-
-
-			
-			
 		} while((n % 2) != 0);
-
 		return n;
 	};
 
@@ -35,16 +29,12 @@ var myPuzzle = function(){
 		}
 		
 			for (i = 0 ; i < (n * (n/2)) ; i++) {
-
 				var isCellReady = false;
 				var pairLetters = 0;
-
 
 				do  {
 					iRow = Math.floor((Math.random() * n)) ;
 					iCol = Math.floor((Math.random() * n)) ;
-
-
 
 					if (myMatrix[iRow][iCol] == null){
 						//console.log(index);
@@ -57,7 +47,6 @@ var myPuzzle = function(){
 
 			}
 			return myMatrix;
-
 	};
 
 	var printMatrix = function(m)
@@ -109,8 +98,13 @@ var myPuzzle = function(){
 		return {row : row, col : col};
 
 	};
-	var tempMatrixUpdate = function(){
+	var tempMatrixUpdate = function(m, m2, id){
+		var m3 = m2;
 
+		m3[id.row][id.col] =  m[id.row][id.col];
+		printMatrix(m3);
+
+		return	m3;
 
 
 	}
@@ -140,41 +134,58 @@ var myPuzzle = function(){
 	var pares = 0;
 
 	do {
-
-
-	console.clear();
-	printMatrix(matrix);
-
-
-	var firstIndex = getIndex('PRIMER', size);
-
-	var secondIndex = getIndex('SEGUNDO', size);
-
-	if(firstIndex == null && secondIndex == null){
-		console.log('Juego Finalizado');
-		return;
-
-	}
-
-	var tempMatrix = tempMatrixUpdate();
-
-	var sameIndex = false;
-
-	if (firstIndex.row == secondIndex.row && firstIndex.col == secondIndex.col ) {
-		sameIndex = true;
-	};
-
 	
-	if (matrix[firstIndex.row][firstIndex.col]==matrix[secondIndex.row][secondIndex.col] && !sameIndex){
-
-		resultMatrix[firstIndex.row][firstIndex.col] = matrix[firstIndex.row][firstIndex.col];
-		resultMatrix[secondIndex.row][secondIndex.col] = matrix[secondIndex.row][secondIndex.col];
-		pares++;
+		printMatrix(resultMatrix);
 
 
-	}	
+		var firstIndex = getIndex('PRIMER', size);
 
-	printMatrix(resultMatrix);
+		var tempMatrix = tempMatrixUpdate(matrix, resultMatrix, firstIndex);
+
+
+		var secondIndex = getIndex('SEGUNDO', size);
+
+		tempMatrixUpdate(matrix, tempMatrix, secondIndex);
+
+
+		if(firstIndex == null && secondIndex == null){
+			console.log('Juego Finalizado');
+			return;
+
+		}
+
+
+
+
+		var sameIndex = false;
+
+		if (firstIndex.row == secondIndex.row && firstIndex.col == secondIndex.col ) {
+			sameIndex = true;
+		};
+
+		
+		if (matrix[firstIndex.row][firstIndex.col]==matrix[secondIndex.row][secondIndex.col] && !sameIndex){
+
+			resultMatrix[firstIndex.row][firstIndex.col] = matrix[firstIndex.row][firstIndex.col];
+			resultMatrix[secondIndex.row][secondIndex.col] = matrix[secondIndex.row][secondIndex.col];
+			pares++;
+
+		}else{
+
+			resultMatrix[firstIndex.row][firstIndex.col] = '*';
+			resultMatrix[secondIndex.row][secondIndex.col] = '*';
+		
+
+
+		}	
+
+		for(i=0; i<size; i++){
+			for(j=0; j<size; j++){
+				tempMatrix[i][j] = resultMatrix[i][j];
+			
+			}	
+		}
+
 
 	
 
