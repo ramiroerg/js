@@ -1,22 +1,23 @@
 H1 {
 	text-align:left; 
 	color:gray; 
-	font: lighter 40pt "Avenir Next";
+	font-family: 'Roboto', sans-serif;
 	margin-left: 5;margin-top: 12;
 	margin-bottom: 0
 }
 H2 {
 	text-align:left; 
 	color:black; 
-	font: normal 14pt "Avenir";
+	font-family: 'Roboto Condensed', sans-serif;
 	margin-left: 5;
 	margin-top: 0;
+	font-size: 12;
 }
 
 UL {
 
 	color:Black; 
-	font: normal 12pt "Avenir";
+	font-family: 'Roboto', sans-serif;
 }
 
 Header {
