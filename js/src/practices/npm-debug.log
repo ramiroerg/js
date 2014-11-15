@@ -1,0 +1,196 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'frisby' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ 'frisby', null ]
+5 verbose cache add name=undefined spec="frisby" args=["frisby",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'frisby',
+6 verbose parsed url   path: 'frisby',
+6 verbose parsed url   href: 'frisby' }
+7 silly lockFile d4903cc6-frisby frisby
+8 verbose lock frisby /Users/ramiroergueta/.npm/d4903cc6-frisby.lock
+9 silly lockFile d4903cc6-frisby frisby
+10 silly lockFile d4903cc6-frisby frisby
+11 verbose addNamed [ 'frisby', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 131f8b0f-frisby frisby@
+14 verbose lock frisby@ /Users/ramiroergueta/.npm/131f8b0f-frisby.lock
+15 silly addNameRange { name: 'frisby', range: '*', hasData: false }
+16 verbose request where is /frisby
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 643b3fb6fb00c633
+19 verbose url raw /frisby
+20 verbose url resolving [ 'https://registry.npmjs.org/', './frisby' ]
+21 verbose url resolved https://registry.npmjs.org/frisby
+22 verbose request where is https://registry.npmjs.org/frisby
+23 info trying registry request attempt 1 at 08:32:07
+24 verbose etag "D075UUBNX0EZV6YA2V9CF91UB"
+25 http GET https://registry.npmjs.org/frisby
+26 http 304 https://registry.npmjs.org/frisby
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Fri, 24 Oct 2014 12:32:08 GMT',
+27 silly registry.get     server: 'Apache',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'last-modified': 'Fri, 24 Oct 2014 12:32:08 GMT',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     etag: '"D075UUBNX0EZV6YA2V9CF91UB"',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-jfk1030-JFK',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1414153928.239065,VS0,VE355',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'content-length': '0',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 verbose etag https://registry.npmjs.org/frisby from cache
+29 silly addNameRange number 2 { name: 'frisby', range: '*', hasData: true }
+30 silly addNameRange versions [ 'frisby',
+30 silly addNameRange   [ '0.0.1',
+30 silly addNameRange     '0.0.2',
+30 silly addNameRange     '0.0.3',
+30 silly addNameRange     '0.0.4',
+30 silly addNameRange     '0.0.5',
+30 silly addNameRange     '0.0.6',
+30 silly addNameRange     '0.1.0',
+30 silly addNameRange     '0.1.1',
+30 silly addNameRange     '0.1.2',
+30 silly addNameRange     '0.1.3',
+30 silly addNameRange     '0.1.4',
+30 silly addNameRange     '0.1.5',
+30 silly addNameRange     '0.1.6',
+30 silly addNameRange     '0.1.7',
+30 silly addNameRange     '0.1.8',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.2.2',
+30 silly addNameRange     '0.2.3',
+30 silly addNameRange     '0.2.5',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.3.1',
+30 silly addNameRange     '0.3.2',
+30 silly addNameRange     '0.3.5',
+30 silly addNameRange     '0.3.6',
+30 silly addNameRange     '0.4.0',
+30 silly addNameRange     '0.4.1',
+30 silly addNameRange     '0.4.2',
+30 silly addNameRange     '0.4.3',
+30 silly addNameRange     '0.4.4',
+30 silly addNameRange     '0.4.5',
+30 silly addNameRange     '0.4.6',
+30 silly addNameRange     '0.4.7',
+30 silly addNameRange     '0.5.0',
+30 silly addNameRange     '0.5.1',
+30 silly addNameRange     '0.5.2',
+30 silly addNameRange     '0.5.3',
+30 silly addNameRange     '0.5.4',
+30 silly addNameRange     '0.5.5',
+30 silly addNameRange     '0.6.1',
+30 silly addNameRange     '0.6.2',
+30 silly addNameRange     '0.6.5',
+30 silly addNameRange     '0.6.6',
+30 silly addNameRange     '0.6.7',
+30 silly addNameRange     '0.6.8',
+30 silly addNameRange     '0.6.9',
+30 silly addNameRange     '0.7.0',
+30 silly addNameRange     '0.7.1',
+30 silly addNameRange     '0.7.2',
+30 silly addNameRange     '0.7.3',
+30 silly addNameRange     '0.7.4',
+30 silly addNameRange     '0.7.5',
+30 silly addNameRange     '0.7.6',
+30 silly addNameRange     '0.7.7',
+30 silly addNameRange     '0.7.8',
+30 silly addNameRange     '0.7.9',
+30 silly addNameRange     '0.8.0',
+30 silly addNameRange     '0.8.1',
+30 silly addNameRange     '0.8.2',
+30 silly addNameRange     '0.8.3' ] ]
+31 verbose addNamed [ 'frisby', '0.8.3' ]
+32 verbose addNamed [ '0.8.3', '0.8.3' ]
+33 silly lockFile eab137c4-frisby-0-8-3 frisby@0.8.3
+34 verbose lock frisby@0.8.3 /Users/ramiroergueta/.npm/eab137c4-frisby-0-8-3.lock
+35 silly lockFile eab137c4-frisby-0-8-3 frisby@0.8.3
+36 silly lockFile eab137c4-frisby-0-8-3 frisby@0.8.3
+37 silly lockFile 131f8b0f-frisby frisby@
+38 silly lockFile 131f8b0f-frisby frisby@
+39 silly resolved [ { name: 'frisby',
+39 silly resolved     version: '0.8.3',
+39 silly resolved     description: 'Frisby.js: REST API Endpoint Testing built on Jasmine',
+39 silly resolved     homepage: 'http://frisbyjs.com',
+39 silly resolved     author: { name: 'Vance Lucas', email: 'vance@vancelucas.com' },
+39 silly resolved     license: { type: 'BSD' },
+39 silly resolved     contributors: [ [Object], [Object] ],
+39 silly resolved     repository: { type: 'git', url: 'http://github.com/vlucas/frisby' },
+39 silly resolved     keywords: [ 'testing', 'api', 'REST', 'jasmine', 'bdd', 'frisby' ],
+39 silly resolved     dependencies:
+39 silly resolved      { request: '2.x.x',
+39 silly resolved        jsonschema: '1.0.0',
+39 silly resolved        'stack-trace': '0.0.x',
+39 silly resolved        'mock-request': '>= 0.1.2',
+39 silly resolved        nock: '*',
+39 silly resolved        underscore: '1.6.x',
+39 silly resolved        qs: '1.2.x' },
+39 silly resolved     devDependencies: { 'jasmine-node': '~1.14.5', 'form-data': '~0.1.4' },
+39 silly resolved     main: './lib/frisby',
+39 silly resolved     engines: { node: '>= 0.10.0' },
+39 silly resolved     scripts: { test: 'jasmine-node spec/' },
+39 silly resolved     bugs: { url: 'https://github.com/vlucas/frisby/issues' },
+39 silly resolved     _id: 'frisby@0.8.3',
+39 silly resolved     dist:
+39 silly resolved      { shasum: '034bd32c51de39b7c64025d752861c79387f1cd1',
+39 silly resolved        tarball: 'http://registry.npmjs.org/frisby/-/frisby-0.8.3.tgz' },
+39 silly resolved     _from: 'frisby@',
+39 silly resolved     _npmVersion: '1.3.24',
+39 silly resolved     _npmUser: { name: 'brightbit', email: 'hello@brightb.it' },
+39 silly resolved     maintainers: [ [Object] ],
+39 silly resolved     directories: {},
+39 silly resolved     _shasum: '034bd32c51de39b7c64025d752861c79387f1cd1',
+39 silly resolved     _resolved: 'https://registry.npmjs.org/frisby/-/frisby-0.8.3.tgz',
+39 silly resolved     readme: 'ERROR: No README data found!' } ]
+40 info install frisby@0.8.3 into /usr/local/lib
+41 info installOne frisby@0.8.3
+42 verbose lib/node_modules/frisby unbuild
+43 verbose tar unpack /Users/ramiroergueta/.npm/frisby/0.8.3/package.tgz
+44 silly lockFile 51505687-sr-local-lib-node-modules-frisby tar:///usr/local/lib/node_modules/frisby
+45 verbose lock tar:///usr/local/lib/node_modules/frisby /Users/ramiroergueta/.npm/51505687-sr-local-lib-node-modules-frisby.lock
+46 silly lockFile f430920a-eta-npm-frisby-0-8-3-package-tgz tar:///Users/ramiroergueta/.npm/frisby/0.8.3/package.tgz
+47 verbose lock tar:///Users/ramiroergueta/.npm/frisby/0.8.3/package.tgz /Users/ramiroergueta/.npm/f430920a-eta-npm-frisby-0-8-3-package-tgz.lock
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 error Error: EACCES, mkdir '/usr/local/lib/node_modules/frisby'
+49 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/frisby']
+49 error   errno: 3,
+49 error   code: 'EACCES',
+49 error   path: '/usr/local/lib/node_modules/frisby',
+49 error   fstream_type: 'Directory',
+49 error   fstream_path: '/usr/local/lib/node_modules/frisby',
+49 error   fstream_class: 'DirWriter',
+49 error   fstream_stack:
+49 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+49 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+49 error      'Object.oncomplete (fs.js:107:15)' ] }
+50 error Please try running this command again as root/Administrator.
+51 error System Darwin 14.0.0
+52 error command "node" "/usr/local/bin/npm" "install" "-g" "frisby"
+53 error cwd /Users/ramiroergueta/jstraining/js/js/src
+54 error node -v v0.10.32
+55 error npm -v 1.4.28
+56 error path /usr/local/lib/node_modules/frisby
+57 error fstream_path /usr/local/lib/node_modules/frisby
+58 error fstream_type Directory
+59 error fstream_class DirWriter
+60 error code EACCES
+61 error errno 3
+62 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/frisby'
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+63 error fstream_stack Object.oncomplete (fs.js:107:15)
+64 verbose exit [ 3, true ]
