@@ -1,0 +1,204 @@
+<html>
+</head>
+<script type="text/javascript" src="js/src/main.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,900italic,900,700italic,700,500italic,500,400italic' rel='stylesheet' type='text/css'>
+<link rel=stylesheet type="text/css" href="css/home.css">
+<title>js Training</title>
+</head>
+<body>
+	<div id="header">
+		<h1>Frisby JS Lab 2</h1>
+	</div>
+<h2>RAMIRO ERGUETA</h2>
+<hr>
+<h4> 1. AUTOMATE 5 SMOKE TESTS <H4>
+<BR>
+
+<h4>Default Projects created</h4>
+<h3><a href = "js/src/smokeCreatedProjectsSpec.js">smokeCreatedProjectsSpec.js</a></h3>
+<H2>Given a new build deployed
+<br>When I look for projects
+<br>Then I should have at least one
+</h2>
+
+<BR>
+
+<h4>Default Items created</h4>
+<h3><a href = "js/src/smokeCreatedItemsSpec.js">smokeCreatedItemsSpec.js</a></h3>
+<H2>Given a new build deployed
+<br>When I look for Items
+<br>Then I should have at least one
+</h2>
+
+<BR>
+
+<h4>Create a new Project</h4>
+<h3><a href = "js/src/smokePostProjectSpec.js">smokePostProjectSpec.js</a></h3>
+<H2>Given I don't have any Project
+<br>When I create a new Project
+<br>Then I should get a code 200 
+</h2>
+
+<BR>
+
+<h4>Create a new Item</h4>
+<h3><a href = "js/src/smokePostItemSpec.js">smokePostItemSpec.js</a></h3>
+<H2>Given I have at least one Default project created in my account
+<br>When I create a new Item
+<br>Then I should get a code 200  
+</h2>
+
+<BR>
+
+<h4>Generate a user token</h4>
+<h3><a href = "js/src/smokeGetTokenSpec.js">smokeGetTokenSpec.js</a></h3>
+<H2>Given a user is logged
+<br>When we ask for a token
+<br>Then this token should be generated  
+</h2>
+
+<BR>
+
+<h4> 2. AUTOMATE 5 SANITY TESTS <H4>
+
+<BR>
+
+<h4>Get logged user information</h4>
+<h3><a href = "js/src/sanityGetUserSpec.js">sanityGetUserSpec.js</a></h3>
+<H2>Given a user logged
+<br>When I look for the user
+<br>Then his information should be returned  
+</h2>
+
+<BR>
+
+<h4>Create a Project</h4>
+<h3><a href = "js/src/sanityCreateProjectSpec.js">sanityCreateProjectSpec.js</a></h3>
+<H2>Given I don't have any project
+<br>When I create a project "Test Project"
+<br>Then I should get an String with the same name  
+</h2>
+
+<BR>
+
+<h4>Update Project Name</h4>
+<h3><a href = "js/src/sanityUpdateProjectSpec.js">sanityUpdateProjectSpec.js</a></h3>
+<H2>Given I create one project
+<br>When I update the name of the project
+<br>Then the name should be updated  
+</h2>
+
+<BR>
+
+<h4>Create Item</h4>
+<h3><a href = "js/src/sanityCreateItemSpec.js">sanityCreateItemSpec.js</a></h3>
+<H2>Given I have at least one Default project created in my account
+<br>When I create a new Item "Test Item"
+<br>Then I should get an String with the same name
+</h2>
+
+<BR>
+
+<h4>Update Item</h4>
+<h3><a href = "js/src/sanityUpdateItemSpec.js">sanityUpdateItemSpec.js</a></h3>
+<H2>Given I have a Project with an Item
+<br>When I update the name of the item
+<br>Then the name should be updated
+</h2>
+
+<BR>
+
+<h4> 3. AUTOMATE 10 WORKFLOWS (INCLUDE NEGATIVE TESTS)<H4>
+
+<BR>
+
+<h4>Create, Update, Delete Project</h4>
+<h3><a href = "js/src/wCreateUpdateDeleteProjectSpec.js">wCreateUpdateDeleteProjectSpec.js</a></h3>
+<H2>Given I don't have a Project
+<br>When I create a Project
+<br>Then I should be able to update the Project, verify the changes and Delete the project
+</h2>
+
+<BR>
+
+<h4>Create a Project and add a sub Project</h4>
+<h3><a href = "js/src/wCreateProjectSubSpec.js">wCreateProjectSubSpec.js</a></h3>
+<H2>Given I don't have a Project
+<br>When I create a Project and I create a Sub Project
+<br>Then this Sub Project should have a ParentId greater than 0
+</h2>
+
+<BR>
+
+<h4>Create a Project and then add an Item</h4>
+<h3><a href = "js/src/wCreateProjectAndItemSpec.js">wCreateProjectAndItemSpec.js</a></h3>
+<H2>Given I don't have a Project
+<br>When I create a Project and I create an Item
+<br>Then I should have one Item as ItemsCount
+</h2>
+
+<BR>
+
+<h4>Create a Project add an item and mark it as done</h4>
+<h3><a href = "js/src/wCreateProjectAndDoneItemSpec.js">wCreateProjectAndDoneItemSpec.js</a></h3>
+<H2>Given I don't have a Project
+<br>When I create a Project and I create an Item and mark it done
+<br>Then Checked parameter should be True
+</h2>
+
+<BR>
+
+<h4>Create a Project with items and mark them as done, get the list of done Items</h4>
+<h3><a href = "js/src/wCreateProjectAndGetDoneItemsSpec.js">wCreateProjectAndGetDoneItemsSpec.js</a></h3>
+<H2>Given I don't have a Project
+<br>When I create a Project and I create 3 Item and mark 2 as done
+<br>Then I should get the list of done items
+</h2>
+
+<BR>
+
+<h4>Create project, create item, delete project, find created item (negative)</h4>
+<h3><a href = "js/src/wDeleteProjectFindItemSpec.js">wDeleteProjectFindItemSpec.js</a></h3>
+<H2>Given I don't have a Project
+<br>When I create an item for this project and delete the project
+<br>Then I should get the Item as deleted
+</h2>
+
+<BR>
+
+<h4>Create a project, create an item, delete the item, find created item (negative)</h4>
+<h3><a href = "js/src/wDeleteItemFindItemSpec.js">wDeleteItemFindItemSpec.js</a></h3>
+<H2>Given I don't have a Project
+<br>When I create an item for this project and delete the item
+<br>Then I should get the Item as deleted
+</h2>
+
+<BR>
+
+<h4>Create Item for the inbox and get the list of items using filters</h4>
+<h3><a href = "js/src/wCreateInboxItemSpec.js">wCreateInboxItemSpec.js</a></h3>
+<H2>Given I have a default project 
+<br>When I create an item
+<br>Then the item should be created in the Inbox
+</h2>
+
+<BR>
+
+<h4>Create an item in the Inbox with a Due Date, Remove the Due Date</h4>
+<h3><a href = "js/src/wRemoveItemDueDateSpec.js">wRemoveItemDueDateSpec.js</a></h3>
+<H2>Given I have a default projet Inbox with Id 0 and I create a Item with a Due Date
+<br>When I remove the Due Date
+<br>Then the item should display this parameter as empty
+</h2>
+
+<BR>
+
+<h4>Get items using filters for custom Project (negative)</h4>
+<h3><a href = "js/src/wFiltersForCustomProjectsSpec.js">wFiltersForCustomProjectsSpec.js</a></h3>
+<H2>Given I create a Parent Project with 2 Items
+<br>When I try to retrieve the data using filters for the parent Project
+<br>Then I should get an error
+</h2>
+
+</body>
+</html>

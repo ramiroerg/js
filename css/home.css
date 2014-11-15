@@ -8,10 +8,31 @@ H1 {
 H2 {
 	text-align:left; 
 	color:black; 
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Roboto Light', sans-serif;
 	margin-left: 5;
 	margin-top: 0;
+	margin-bottom: 0;
 	font-size: 12;
 }
 
+H3 {
+	text-align:left; 
+	color:black; 
+	font-family: 'Roboto Condensed', sans-serif;
+	font-style: italic;
+	margin-left: 5;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 12;
+}
 
+H4 {
+	text-align:left; 
+	color:gray; 
+	font-family: 'Roboto', sans-serif;
+	font-style: bold;
+	margin-left: 5;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17;
+}
